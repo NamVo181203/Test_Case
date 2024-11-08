@@ -1,0 +1,24 @@
+Test  Scenario  Template,,,,,,
+Module Name / Requirement ID,Test Scenario ID,Test Scenario Name,# Of Test Cases,Test Case ID,Test Case Name,Comments
+Login,TS_001,Verify Login Functionality	,5,TC_001,Verify User can login with valid username and password,Đăng nhập thành công với thông tin hợp lệ.
+,,,,TC_002,Verify User cannot login with invalid username,Đăng nhập thất bại với tên người dùng không hợp lệ.
+,,,,TC_003,Verify User cannot login with invalid password,Đăng nhập thất bại với mật khẩu không hợp lệ.
+,,,,TC_004,Verify error message is displayed when no credentials are entered,Hiển thị thông báo lỗi khi không nhập thông tin.
+,,,,TC_005,Verify User can toggle password visibility,Kiểm tra chức năng hiển thị mật khẩu.
+Logout ,TS_002,Verify Logout Functionality,2,TC_006,Verify User can logout successfully,Đăng xuất thành công.
+,,,,TC_007,Verify session is terminated after logout,Kiểm tra phiên làm việc đã bị kết thúc.
+Register a Patient ,TS_003,Verify Patient Registration,3,TC_008,Verify User can register a new patient with valid details,Đăng ký bệnh nhân thành công.
+,,,,TC_009,Verify error messages for missing required fields,Hiển thị thông báo lỗi khi thiếu thông tin.
+,,,,TC_010,Verify duplicate registration is not allowed,Kiểm tra không cho phép đăng ký trùng lặp.
+Find Patient Record ,TS_004,Verify Find Patient Functionality,3,TC_011,Verify User can find a patient by ID,Tìm kiếm bệnh nhân thành công theo ID.
+,,,,TC_012,Verify User can find a patient by Name,Tìm kiếm bệnh nhân thành công theo tên.
+,,,,TC_013,Verify User receives appropriate message if patient not found,Hiển thị thông báo khi không tìm thấy bệnh nhân.
+View the Patient,TS_005,Verify View Patient Details,2,TC_014,Verify User can view patient details successfully,Xem chi tiết bệnh nhân thành công.
+,,,,TC_015,Verify User cannot view details of non-existing patient,Kiểm tra không thể xem chi tiết bệnh nhân không tồn tại.
+Search a Patient ,TS_006,Verify Search Patient Functionality,2,TC_016,Verify User can search a patient using various filters,Tìm kiếm bệnh nhân thành công với các bộ lọc.
+,,,,TC_017,Verify no results message when no patient matches the search criteria,Hiển thị thông báo không có kết quả tìm kiếm.
+Book an Appointment,TS_007,Verify Appointment Booking,3,TC_018,Verify User can book an appointment for a patient,Đặt lịch hẹn thành công cho bệnh nhân.
+,,,,TC_019,Verify User receives confirmation after booking,Nhận thông báo xác nhận sau khi đặt lịch.
+,,,,TC_020,Verify User cannot book an appointment if patient is not registered,Không cho phép đặt lịch nếu bệnh nhân chưa đăng ký.
+Capture Vitals,TS_008,Verify Vitals Capture Functionality,2,TC_021,Verify User can capture vitals for a patient,Ghi nhận thông số sinh tồn thành công cho bệnh nhân.
+,,,,TC_022,Verify error messages for invalid vitals input,Hiển thị thông báo lỗi khi nhập dữ liệu không hợp lệ.
