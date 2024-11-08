@@ -2,11 +2,6 @@ package lab;
 
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.Select;
-import org.openqa.selenium.support.ui.WebDriverWait;
-
-import java.time.Duration;
 
 public class Team_lab {
     private WebDriver driver;
@@ -52,6 +47,10 @@ public class Team_lab {
         driver.navigate().back();
     }
 
+    public void registerPatient(){
+
+    }
+
     public void logout(){
         WebElement logoutButton = driver.findElement(By.xpath("//a[text()='\n" +
                 "                        Logout\n" +
@@ -65,6 +64,7 @@ public class Team_lab {
         lab.runWed();
         lab.login();
         lab.findPatient();
+        lab.logout();
     }
 
 }
